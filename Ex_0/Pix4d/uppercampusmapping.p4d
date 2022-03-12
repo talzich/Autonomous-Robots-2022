@@ -1,0 +1,2426 @@
+<?xml version="1.0"?>
+<pix4dmapper>
+	<software>
+		<projectVersion>3.0.18</projectVersion>
+		<p4dVersion>9</p4dVersion>
+		<cameraModelVersion>19</cameraModelVersion>
+	</software>
+	<options>
+		<initial>
+			<runStep>true</runStep>
+			<!--    General    -->
+			<!--Keypoints Image Scale-->
+			<keypointsImageScale>Full</keypointsImageScale>
+			<imageScale>1</imageScale>
+			<!--Quality report-->
+			<generateOrthoInReport>true</generateOrthoInReport>
+			<!--    Matching    -->
+			<!--Matching Image Pairs-->
+			<matchStrategy>AutoAerial</matchStrategy>
+			<matchTimeNbNeighbours>3</matchTimeNbNeighbours>
+			<matchUseTriangulation>false</matchUseTriangulation>
+			<matchRelativeDistanceImages>0</matchRelativeDistanceImages>
+			<matchMtpMaxImagePair>5</matchMtpMaxImagePair>
+			<matchImageSimilarityMaxPairs>6</matchImageSimilarityMaxPairs>
+			<matchTimeMultiCamera>0</matchTimeMultiCamera>
+			<!--Matching Strategy-->
+			<geometricallyVerifiedMatching>false</geometricallyVerifiedMatching>
+			<!--    Calibration    -->
+			<!--Targeted number of keypoints-->
+			<keypointSelectionMethod>Automatic</keypointSelectionMethod>
+			<numberOfKeypoints>10000</numberOfKeypoints>
+			<!--Method-->
+			<calibrationMethod>Standard</calibrationMethod>
+			<!--Optimizer-->
+			<optimizerType>Classic</optimizerType>
+			<!--Camera optimization-->
+			<internalParamOptimization>All</internalParamOptimization>
+			<externalParamOptimization>All</externalParamOptimization>
+			<!--Rematch-->
+			<rematchStrategy>Auto</rematchStrategy>
+			<rematch>true</rematch>
+			<rematchOverlap>0.3000000119</rematchOverlap>
+			<!--SkySegmentation-->
+			<automaticSkyMasking>true</automaticSkyMasking>
+			<!--Export-->
+			<exportCameraParamsAATBBA>false</exportCameraParamsAATBBA>
+			<exportUndistortedImages>false</exportUndistortedImages>
+			<!--    Miscellaneous options    -->
+			<matchAll>false</matchAll>
+			<targetCameraDist>0</targetCameraDist>
+			<descriptorType>0</descriptorType>
+			<minImageDist>0</minImageDist>
+			<rigMatch>true</rigMatch>
+			<saveKMLReport>false</saveKMLReport>
+			<createThumbnails>true</createThumbnails>
+			<threshAdd>20</threshAdd>
+			<threshHom>10</threshHom>
+		</initial>
+		<dense>
+			<runStep>true</runStep>
+			<!--    Point Cloud    -->
+			<!--Densification-->
+			<pclImageDownscaleFactor>1</pclImageDownscaleFactor>
+			<pclImageMultiscale>true</pclImageMultiscale>
+			<pclDensity>Optimal</pclDensity>
+			<pclMinNoMatches>3</pclMinNoMatches>
+			<!--Export-->
+			<pclExportLAS>false</pclExportLAS>
+			<pclExportLAZ>false</pclExportLAZ>
+			<pclExportPLY>false</pclExportPLY>
+			<pclExportXYZ>false</pclExportXYZ>
+			<pclExportXYZDelim>Space</pclExportXYZDelim>
+			<pclExportMergeTiles>false</pclExportMergeTiles>
+			<!--    3D Textured Mesh    -->
+			<!--Generation-->
+			<meshGenerate3dTexturedMesh>true</meshGenerate3dTexturedMesh>
+			<!--Settings-->
+			<meshResolution>Medium</meshResolution>
+			<meshMaxOctreeDepth>12</meshMaxOctreeDepth>
+			<meshTextureSize>8192</meshTextureSize>
+			<meshDecimationCriteria>Quantitative</meshDecimationCriteria>
+			<meshMaxTriangles>1000000</meshMaxTriangles>
+			<meshDecimationStrategy>Sensitive</meshDecimationStrategy>
+			<meshTextureColorBalancing>false</meshTextureColorBalancing>
+			<!--Export-->
+			<meshExportPLY>false</meshExportPLY>
+			<meshExportFBX>false</meshExportFBX>
+			<meshExportDXF>false</meshExportDXF>
+			<meshExportOSGB>false</meshExportOSGB>
+			<meshExportOBJ>false</meshExportOBJ>
+			<meshExportTiledOBJ>false</meshExportTiledOBJ>
+			<meshExportPDF3D>false</meshExportPDF3D>
+			<meshExportPDF3DLogoPath></meshExportPDF3DLogoPath>
+			<!--    Advanced    -->
+			<!--Densification-->
+			<pclWindowSize>7</pclWindowSize>
+			<!--Image groups-->
+			<pclImageGroups>
+				<group name=""/>
+			</pclImageGroups>
+			<meshGeometryImageGroups>
+				<group name=""/>
+			</meshGeometryImageGroups>
+			<meshTextureImageGroups>
+				<group name=""/>
+			</meshTextureImageGroups>
+			<!--Point cloud Filters-->
+			<pclUseProcessingArea>true</pclUseProcessingArea>
+			<pclUseAnnotations>true</pclUseAnnotations>
+			<pclLimitDepthAutomatically>false</pclLimitDepthAutomatically>
+			<!--Point cloud classification-->
+			<pclTerrainClassf>false</pclTerrainClassf>
+			<pclTerrainClassfMinLength>0.1</pclTerrainClassfMinLength>
+			<pclTerrainClassfMaxLength>400</pclTerrainClassfMaxLength>
+			<pclTerrainClassfMinHeight>0.1</pclTerrainClassfMinHeight>
+			<!--Mesh generation-->
+			<meshSampleDensityDivider>1</meshSampleDensityDivider>
+			<!--    ADD-ON options   -->
+			<addOnUseSGM>false</addOnUseSGM>
+			<addOnSGMOptimizeForDSM>true</addOnSGMOptimizeForDSM>
+			<addOnSGMOverlapForward>-1</addOnSGMOverlapForward>
+			<addOnSGMOverlapSideward>-1</addOnSGMOverlapSideward>
+		</dense>
+		<ortho>
+			<runStep>true</runStep>
+			<!--    DSM and Orthomosaic   -->
+			<!--Resolution-->
+			<orthoResolution>-1</orthoResolution>
+			<!--DSM Filters-->
+			<dsmFilterUseNoiseFilter>true</dsmFilterUseNoiseFilter>
+			<dsmFilterUseSmoothing>true</dsmFilterUseSmoothing>
+			<dsmFilterSmoothingType>Sharp</dsmFilterSmoothingType>
+			<!--Raster DSM-->
+			<dsmTIFF>false</dsmTIFF>
+			<dsmMethod>InverseDistanceWeighting</dsmMethod>
+			<dsmTIFFMergeTiles>false</dsmTIFFMergeTiles>
+			<!--Orthomosaic-->
+			<mosaicTIFF>false</mosaicTIFF>
+			<mosaicTIFFMergeTiles>true</mosaicTIFFMergeTiles>
+			<mosaicTIFFNoTransparency>false</mosaicTIFFNoTransparency>
+			<mosaicKML>false</mosaicKML>
+			<!--    Additional outputs    -->
+			<!--Grid DSM-->
+			<gridDsmXYZ>false</gridDsmXYZ>
+			<gridDsmXYZDelim>Space</gridDsmXYZDelim>
+			<gridDsmLAS>false</gridDsmLAS>
+			<gridDsmLAZ>false</gridDsmLAZ>
+			<gridDsmGridSpacing>100</gridDsmGridSpacing>
+			<!--Contour lines-->
+			<contourSHP>false</contourSHP>
+			<contourPDF>false</contourPDF>
+			<contourDXF>false</contourDXF>
+			<contourBase>0</contourBase>
+			<contourElevationInterval>10</contourElevationInterval>
+			<contourResolution>100</contourResolution>
+			<contourMinLineSize>20</contourMinLineSize>
+			<!--    Miscellaneous options    -->
+			<meanResolution>3.7380515509</meanResolution>
+			<mosaicVisib>true</mosaicVisib>
+			<mosaicGainc>true</mosaicGainc>
+			<dsmPNG>false</dsmPNG>
+		</ortho>
+		<index>
+			<!--Resolution-->
+			<indexResolution>-1</indexResolution>
+			<indexDownsamplingMethod>Gauss</indexDownsamplingMethod>
+			<!--Reflectance Map-->
+			<indexReflectance>false</indexReflectance>
+			<indexReflectanceMergeTiles>false</indexReflectanceMergeTiles>
+			<indices>
+				<index name="red" formula="red" enabled="false"/>
+				<index name="green" formula="green" enabled="false"/>
+				<index name="blue" formula="blue" enabled="false"/>
+				<index name="grayscale" formula="0.2126 * red + 0.7152 * green + 0.0722 * blue" enabled="false"/>
+			</indices>
+			<!--Export-->
+			<indexExportPointSHP>false</indexExportPointSHP>
+			<indexExportPointSHPGridSize>200</indexExportPointSHPGridSize>
+			<indexExportPolygonSHP>false</indexExportPolygonSHP>
+			<indexExportPolygonSHPGridSize>400</indexExportPolygonSHPGridSize>
+		</index>
+	</options>
+	<inputs>
+		<cameras>
+			<camera name="_0.0_1920x1088">
+				<imageWidth>1920</imageWidth>
+				<imageHeight>1088</imageHeight>
+				<pixelSize>18.75</pixelSize>
+				<principalPointXmm>18</principalPointXmm>
+				<principalPointYmm>10.2</principalPointYmm>
+				<lensType>perspective</lensType>
+				<focalLengthmm>30</focalLengthmm>
+				<distortion>5</distortion>
+				<radialK1>0</radialK1>
+				<radialK2>0</radialK2>
+				<radialK3>0</radialK3>
+				<tangentialT1>0</tangentialT1>
+				<tangentialT2>0</tangentialT2>
+				<cameraModelSource>exif</cameraModelSource>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+				<serialNumber></serialNumber>
+				<fixedBands>false</fixedBands>
+				<id>0</id>
+				<radiometricNormalization>none</radiometricNormalization>
+			</camera>
+		</cameras>
+		<coordinateSystems>
+			<southingWesting>true</southingWesting>
+			<output>
+				<WKT>LOCAL_CS[&quot;Arbitrary (m)&quot;,LOCAL_DATUM[&quot;Arbitrary datum&quot;],UNIT[&quot;meter&quot;,1.0,AUTHORITY[&quot;EPSG&quot;,&quot;9001&quot;]]]</WKT>
+				<verticalDef model="noConv"/>
+			</output>
+			<gcp>
+				<WKT>LOCAL_CS[&quot;Arbitrary (m)&quot;,LOCAL_DATUM[&quot;Arbitrary datum&quot;],UNIT[&quot;meter&quot;,1.0,AUTHORITY[&quot;EPSG&quot;,&quot;9001&quot;]]]</WKT>
+				<verticalDef model="noConv"/>
+			</gcp>
+			<image>
+				<WKT>GEOGCS[&quot;WGS 84&quot;,DATUM[&quot;WGS_1984&quot;,SPHEROID[&quot;WGS 84&quot;,6378137,298.257223563,AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]],TOWGS84[0,0,0,0,0,0,0],AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]],PRIMEM[&quot;Greenwich&quot;,0,AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]],UNIT[&quot;degree&quot;,0.01745329251994328,AUTHORITY[&quot;EPSG&quot;,&quot;9122&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]</WKT>
+				<verticalDef model="egm96"/>
+			</image>
+		</coordinateSystems>
+		<gcps/>
+		<images>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus00001.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus00031.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus00061.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus00091.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus00121.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus00151.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus03511.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus03541.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus03571.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus03631.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus03691.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus03721.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus03901.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus03931.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus03961.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus03991.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04021.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04081.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04111.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04171.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04201.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04231.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04261.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04291.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04321.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04351.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04381.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04411.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04441.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04471.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04501.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04561.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04621.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04681.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04711.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04741.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04771.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04801.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04831.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04861.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04891.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04921.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04951.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus04981.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05011.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05041.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05071.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05101.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05131.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05161.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05191.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05221.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05251.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05281.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05311.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05341.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05371.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05431.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05491.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05521.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05551.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05581.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05611.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05641.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05671.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05701.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05731.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05791.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05821.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05851.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05881.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05911.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05941.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus05971.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06001.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06091.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06121.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06151.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06181.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06211.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06241.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06271.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06301.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06361.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06391.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06421.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06451.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06481.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06511.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06541.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06571.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06601.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06631.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06661.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06691.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06721.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06811.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06841.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06871.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06901.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06961.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus06991.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus07021.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus07051.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus07081.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus07111.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus07171.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus07201.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus07231.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus07261.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus07291.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus07321.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus07351.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus07381.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus07411.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100001.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100031.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100061.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100091.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100121.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100151.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100181.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100211.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100241.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100271.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100301.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100331.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100361.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100391.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100421.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100451.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100541.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100571.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100661.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100781.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100811.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100841.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100871.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100901.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100931.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100961.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus100991.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101021.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101051.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101081.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101111.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101141.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101171.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101201.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101231.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101291.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101351.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101441.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101471.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101501.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101561.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101591.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101651.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101681.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101711.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101741.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101771.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101801.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101831.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101861.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101891.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101921.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus101951.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102011.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102041.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102071.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102101.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102131.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102161.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102221.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102281.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102311.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102371.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102401.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102431.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102461.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102491.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102521.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102551.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102581.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102611.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102641.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102671.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102701.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102731.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102761.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102851.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102881.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102911.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus102971.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103001.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103031.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103421.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103451.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103481.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103511.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103541.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103571.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103601.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103631.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103661.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103691.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103721.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103751.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103781.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103871.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103901.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103931.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus103991.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104021.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104081.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104171.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104201.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104231.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104291.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104321.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104351.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104381.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104471.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104531.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104591.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104621.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104681.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104741.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104801.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104831.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104861.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104891.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104921.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104951.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus104981.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105011.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105041.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105071.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105131.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105161.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105191.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105221.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105251.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105281.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105311.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105341.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105371.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105401.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105431.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105461.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105491.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105521.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105581.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105611.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105641.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105671.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105701.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105731.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105761.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105791.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105851.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105881.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus105941.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106001.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106031.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106091.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106121.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106151.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106211.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106241.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106331.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106361.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106391.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106421.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106481.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106511.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106571.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106601.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106631.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106661.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106691.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106721.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106751.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106781.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106811.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106841.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106871.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106901.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106931.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus106961.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107021.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107051.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107111.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107141.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107171.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107201.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107231.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107261.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107291.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107351.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107381.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107501.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107531.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107591.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107651.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107681.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107741.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107771.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107801.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107831.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107891.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="/Users/talzichlinsky/Desktop/Classroom Dataset/upper_campus107921.jpg" group="group1" enabled="true">
+				<camera name="_0.0_1920x1088" id="0"/>
+				<gps alt="0" lat="0" lng="0"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+		</images>
+		<indexRegions/>
+		<indexClasses/>
+		<objects>
+			<object name="Clipping Box" type="CLIPPING_BOX" centerX="0" centerY="0" centerZ="0" sizeX="5" sizeY="5" sizeZ="5" rotationZ="0" fresh="true"/>
+			<object name="Unclassified" type="POINT_GROUP" groupId="0" classificationId="0" locked="false"/>
+			<object name="Deleted" type="POINT_GROUP" groupId="1" classificationId="0" locked="false"/>
+		</objects>
+	</inputs>
+</pix4dmapper>
